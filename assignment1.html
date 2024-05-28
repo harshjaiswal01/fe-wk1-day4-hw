@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Enrollment Form</title>
+</head>
+<body>
+  <h1>Student Enrollment Form</h1>
+
+  <form action="#" method="post">
+    <section>
+        <h2>Student Information</h2>
+        <label for="studentName">Student's Name:</label>
+        <input type="text" id="studentName" name="studentName" placeholder="Enter student's name" required>
+        <p></p>
+        <label for="studentAge">Student's Age:</label>
+        <input type="number" id="studentAge" name="studentAge" placeholder="Enter student's age" min="6" max="18" required>
+        <p></p>
+
+        <label for="grade">Grade Applying for:</label>
+        <select id="grade" name="grade" required>
+            <option value="">Select grade</option>
+            <option value="Grade 1">Grade 1</option>
+            <option value="Grade 2">Grade 2</option>
+            <option value="Grade 3">Grade 3</option>
+            <option value="Grade 4">Grade 4</option>
+            <option value="Grade 5">Grade 5</option>
+            <option value="Grade 6">Grade 6</option>
+            <option value="Grade 7">Grade 7</option>
+            <option value="Grade 8">Grade 8</option>
+            <option value="Grade 9">Grade 9</option>
+            <option value="Grade 10">Grade 10</option>
+            <option value="Grade 11">Grade 11</option>
+            <option value="Grade 12">Grade 12</option>
+        </select>
+    </section>
+
+    <section>
+        <h2>Parent/Guardian Information</h2>
+        <label for="parentName">Parent/Guardian's Name:</label>
+        <input type="text" id="parentName" name="parentName" placeholder="Enter parent/guardian's name" required>
+        <p></p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+    </section>
+
+    <section>
+        <h2>Previous School Information</h2>
+        <label for="previousSchool">Previous School:</label>
+        <input type="text" id="previousSchool" name="previousSchool" placeholder="Enter previous school name">
+    </section>
+
+    <section>
+        <h2>Additional Information</h2>
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+        <p>
+        <label for="satisfaction">Admission Councellor Expertise:</label>
+        Novice <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" step="1"> Expert</p>
+
+        <label for="favoriteColor">Favorite Color:</label>
+        <input type="color" id="favoriteColor" name="favoriteColor" value="#007bff">
+        <p></p>
+    </section>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Education Institution Enrollment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    select {
+      height: 36px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Computer Education Institution Enrollment Form</h1>
+
+  <form action="#" method="post">
+    <section>
+      <h2>Student Information</h2>
+      <label for="studentName">Student's Name:</label>
+      <input type="text" id="studentName" name="studentName" placeholder="Enter student's name" required>
+
+      <label for="studentAge">Student's Age:</label>
+      <input type="number" id="studentAge" name="studentAge" placeholder="Enter student's age" min="6" max="18" required>
+
+      <label for="course">Course Applying for:</label>
+      <select id="course" name="course" required>
+        <option value="">Select course</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Software Engineering">Software Engineering</option>
+        <option value="Data Science">Data Science</option>
+        <option value="Cybersecurity">Cybersecurity</option>
+        <option value="Network Administration">Network Administration</option>
+        <option value="Graphic Design">Graphic Design</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Parent/Guardian Information</h2>
+      <label for="parentName">Parent/Guardian's Name:</label>
+      <input type="text" id="parentName" name="parentName" placeholder="Enter parent/guardian's name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+    </section>
+
+    <section>
+      <h2>Previous Education</h2>
+      <label for="previousEducation">Previous Education:</label>
+      <input type="text" id="previousEducation" name="previousEducation" placeholder="Enter previous education">
+    </section>
+
+    <section>
+      <h2>Additional Information</h2>
+      <label for="birthdate">Birthdate:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+
+      <label for="experience">Computer Experience (years):</label>
+      <input type="number" id="experience" name="experience" placeholder="Enter years of computer experience" min="0" required>
+
+      <label for="interests">Interests:</label>
+      <textarea id="interests" name="interests" placeholder="Enter your interests" required></textarea>
+    </section>
+
+    <section>
+      <h2>Selection Experience</h2>
+      <label for="programmingLanguage">Favorite Programming Language:</label>
+      <select id="programmingLanguage" name="programmingLanguage">
+        <option value="">Select language</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="HTML">HTML</option>
+        <option value="C#">C#</option>
+        <option value="Java">Java</option>
+      </select>
+
+      <fieldset>
+        <legend>Level of Expertise:</legend>
+        <label><input type="radio" name="expertise" value="beginner"> Beginner</label>
+        <label><input type="radio" name="expertise" value="intermediate"> Intermediate</label>
+        <label><input type="radio" name="expertise" value="advanced"> Advanced</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Development Platforms:</legend>
+        <label><input type="checkbox" name="platform" value="web"> Web</label>
+        <label><input type="checkbox" name="platform" value="mobile"> Mobile</label>
+        <label><input type="checkbox" name="platform" value="desktop"> Desktop</label>
+      </fieldset>
+    </section>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
